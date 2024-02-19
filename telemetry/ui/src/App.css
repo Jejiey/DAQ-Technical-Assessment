@@ -16,7 +16,7 @@
 .live-value {
   color: white;
   font-size: calc(100px + 2vmin);
-  padding: 5%;
+  
 }
 
 .redback-logo {
@@ -29,4 +29,9 @@
 .value-title {
   font-size: calc(25px + 2vmin);
 }
-
+.temp-Container{
+  
+  background-color: rgba(120, 120, 120,0.1);
+  width: max-content;
+  padding: 0% 5% 0% 5%;
+}
