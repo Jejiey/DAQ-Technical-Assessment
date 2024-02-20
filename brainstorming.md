@@ -42,7 +42,7 @@ https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode
     - I'm assuming I dont need to send it to the ui but will revisit
 
 6) Moving onto task #3
-    - for some reason vscode hates react and marks all as errors but everything still works so ?
+    - for some reason vscode hates react and marks all as errors but everything still works 
     - locate definition of the temp value through f12
     - just used if else for it
 
@@ -53,4 +53,9 @@ https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode
          - I may revisit this with https://www.geeksforgeeks.org/how-to-change-the-favicon-in-react-js/ but preliminary testing isn't great
     - added a bit of a background to make the value easier to read
     
+8) Going back to task #2
+    - I dont think we need multiple alerts for the 3 out of bounds so slight change to get rid of the oldest one when that is outputted
+    - Added colour to better differentiate these alerts
+
+
 ## Cloud

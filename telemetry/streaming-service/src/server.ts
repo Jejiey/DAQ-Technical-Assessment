@@ -35,7 +35,8 @@ tcpServer.on("connection", (socket) => {
       OutOfBound.shift();
     }
     if (OutOfBound.length>3){
-      console.error("At the timestamp of: ", jsonData.timestamp," an out of range value appeared more than 3 times in 5 seconds")
+      console.log(" \x1B[101m At the timestamp of: "+ jsonData.timestamp+" \x1B[31m an out of range value appeared more than 3 times in 5 seconds \x1B[0m ")
+      OutOfBound.shift();
      // console.log(OutOfBound, jsonData.timestamp - OutOfBound[0].timestamp)
     }
      
