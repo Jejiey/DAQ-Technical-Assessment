@@ -67,4 +67,12 @@ https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode
     - finallly worked out that i needed to install inside ui/src else it couldn't access it so working!
     - managed to add the graph and by studying live_values and online example https://react-chartjs-2.js.org/examples/line-chart 
     - made it prettier using the docs https://www.chartjs.org/docs/latest/ 
+
+10) a bit of cleaning up
+    - got rid of unused imports that I added unintentionally 
+    - removed the extra node-modules folder
+    - uninstalled the 1st react charts module 
+
+
+
 ## Cloud

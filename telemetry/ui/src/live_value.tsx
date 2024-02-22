@@ -1,12 +1,5 @@
-import { isTemplateExpression } from "typescript";
-import "./App.css";
-import useWebSocket, { ReadyState } from "react-use-websocket";
-const WS_URL = "ws://localhost:8080";
 
-interface VehicleData {
-  battery_temperature: number;
-  timestamp: number;
-}
+import "./App.css";
 
 
 interface TemperatureProps {
