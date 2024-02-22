@@ -73,6 +73,4 @@ https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode
     - removed the extra node-modules folder
     - uninstalled the 1st react charts module 
 
-
-
 ## Cloud
