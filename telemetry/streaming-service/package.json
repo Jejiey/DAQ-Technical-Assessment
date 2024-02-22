@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "chart.js": "^4.4.1",
+    "react-chartjs-2": "^5.2.0",
     "ws": "^8.12.1"
   },
   "devDependencies": {
@@ -20,5 +22,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "chart.js": "^2.9.4",
+  "react-chartjs-2": "^2.11.1"
 }

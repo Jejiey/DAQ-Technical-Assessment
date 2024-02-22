@@ -57,5 +57,14 @@ https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode
     - I dont think we need multiple alerts for the 3 out of bounds so slight change to get rid of the oldest one when that is outputted
     - Added colour to better differentiate these alerts
 
-
+9) Back to prettierfying 
+    - I want to add a graph of past values so its easy to determine if the temperature is rising or falling, (obviously the random nature of the data currently provided makes it less useful)
+    - going to use react charts https://react-charts.tanstack.com/docs/installation
+    - high severity vulnerability (ReDos) with fix available so will also install fix (still 2 vulnerabilities but slightly better)
+    - also ran build
+    - installed but encountering errors of not installing module even if i have (assuming a problem with docker so )
+    - ended up using a slightly different module https://react-chartjs-2.js.org/ 
+    - finallly worked out that i needed to install inside ui/src else it couldn't access it so working!
+    - managed to add the graph and by studying live_values and online example https://react-chartjs-2.js.org/examples/line-chart 
+    - made it prettier using the docs https://www.chartjs.org/docs/latest/ 
 ## Cloud

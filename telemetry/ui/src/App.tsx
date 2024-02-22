@@ -3,9 +3,9 @@ import LiveValue from "./live_value";
 import RedbackLogo from "./redback_logo.jpg";
 import "./App.css";
 import useWebSocket, { ReadyState } from "react-use-websocket";
-
+import LineChart from "./LineGraph";
+import { timeStamp } from "console";
 const WS_URL = "ws://localhost:8080";
-
 interface VehicleData {
   battery_temperature: number;
   timestamp: number;
@@ -36,7 +36,7 @@ function App() {
   }, [readyState]);
 
   useEffect(() => {
-   // console.log("Received: ", lastJsonMessage);
+    // console.log("Received: ", lastJsonMessage);
     if (lastJsonMessage === null) {
       return;
     }
@@ -44,22 +44,30 @@ function App() {
   }, [lastJsonMessage]);
 
   useEffect(() => {
-    document.title = 'Redback';
-    }, []);
+    document.title = "Redback";
+  }, []);
 
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
         <img
           src={RedbackLogo}
           className="redback-logo"
           alt="Redback Racing Logo"
         />
+      </div>
+      <div className="leftSide">
         <p className="value-title">Live Battery Temperature</p>
         <p className="temp-Container">
-        <LiveValue temp={temperature} />
+          <LiveValue temp={temperature} />
         </p>
-      </header>
+      </div>
+
+      <div className="rightSide">
+        <div className="lineContainer">
+          <LineChart temp={temperature}></LineChart>
+        </div>
+      </div>
     </div>
   );
 }
